@@ -1,4 +1,4 @@
-package tn.esprit.arctic.championnat1.Service;
+package tn.esprit.arctic.championnat1.Services;
 
 import tn.esprit.arctic.championnat1.Entities.Pilote;
 
