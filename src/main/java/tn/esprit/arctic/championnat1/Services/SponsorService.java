@@ -41,8 +41,7 @@ public class SponsorService implements ISponsorService{
     @Override
     public List<Sponsor> listSponsors() {
 
-        sp.findAll();
-        return List.of();
+        return  sp.findAll();
     }
 
     @Override

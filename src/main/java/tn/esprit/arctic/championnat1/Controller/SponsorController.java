@@ -23,5 +23,30 @@ public class SponsorController {
         return sponsorService.ajouterSponsors(sponsors);
     }
 
+    @PutMapping("/modifySponsor")
+    public Sponsor modifySponsor(@RequestBody Sponsor sponsor) {
+        return sponsorService.modifierSponsor(sponsor);
+    }
+
+    @DeleteMapping("/deleteSponsor/{id}")
+    public void deleteSponsor(@PathVariable("id") Long idSponsor) {
+        sponsorService.supprimerSponsor(idSponsor);
+    }
+
+    @GetMapping("/listSponsors")
+    public List<Sponsor> listSponsors() {
+        return sponsorService.listSponsors();
+    }
+
+    @GetMapping("/get_sponsor/{id}")
+    public Sponsor getSponsor(@PathVariable("id") Long idSponsor) {
+        return sponsorService.recupererSponsor(idSponsor);
+    }
+
+    @PutMapping("/archiver/{id}")
+    public Boolean archiver(@PathVariable("id") Long idSponsor) {
+        return sponsorService.archiverSponsor(idSponsor);
+    }
+
 
 }
