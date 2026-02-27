@@ -2,6 +2,7 @@ package tn.esprit.arctic.championnat1.Services;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
 import tn.esprit.arctic.championnat1.Entities.Sponsor;
 import tn.esprit.arctic.championnat1.Repository.SponsorRepository;
 
