@@ -1,10 +1,15 @@
 package tn.esprit.arctic.championnat1.Entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "Championnat")
 public class Championnat implements Serializable {
 
@@ -25,5 +30,5 @@ public class Championnat implements Serializable {
     private DetailChampionnat detailChampionnat;
 
     @OneToMany(mappedBy = "championnat")
-    private List<Course> courseList;
+    private List<Course> courses;
 }

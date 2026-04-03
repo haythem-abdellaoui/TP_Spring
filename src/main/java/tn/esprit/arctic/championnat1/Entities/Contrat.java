@@ -1,9 +1,14 @@
 package tn.esprit.arctic.championnat1.Entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "Contrat")
 public class Contrat implements Serializable {
 
