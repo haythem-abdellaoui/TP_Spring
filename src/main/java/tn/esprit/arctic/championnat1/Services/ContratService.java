@@ -45,6 +45,8 @@ public class ContratService implements IContratService {
         championnatRepository.save(championnat);
         return "Course affectée au championnat avec succès";
     }
+
+
     
 
 
